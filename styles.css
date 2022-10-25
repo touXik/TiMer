@@ -1,0 +1,58 @@
+ body{
+ /* background-image: url('Timer.png'); */
+ /* background-color:blue; */
+
+ }
+ .fond img{
+
+    width: 100%;
+    height: 95vh;
+    opacity:70%;
+    
+ }
+ 
+ .content {
+     /* background-image: url('Timer.png');  */
+ 
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+
+
+.img img{
+
+    height:100%;
+    width: 100px;
+    margin-left: 10%;
+    border-style: solid;
+    border-color: #3498DB;
+    border-width: 10%;
+    border-radius: 30%;
+    
+}
+
+
+.action-button {
+    padding: 10px 40px;
+    float: left;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.action-button:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
