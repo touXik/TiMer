@@ -8,4 +8,7 @@ const updateCounter = async ()=>{
     affich.innerHTML =count.value+' Télèchargement ';
 }
 
-updateCounter();
+function count(){
+    updateCounter();
+}
+
