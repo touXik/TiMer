@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="styles.css">
+   <link rel="icon" type="images/logo" href="boxing-bag.png">
     <title>TiMer</title>
 </head>
 <body>
@@ -12,14 +13,30 @@
     <img src="Timer.png" alt="">
 </div>
  <div class="content">
-    <div class="img">
-    <a href="TiMer.apk"><img src="boxing-bag.png" alt=""></a> 
+    <div id="downloadBtn1" class="img">
+    <a ><img src="boxing-bag.png" alt=""></a> 
      </div>
-    <a href="TiMer.apk" class="action-button" onclick="count()">
+    <a id="downloadBtn2"  class="action-button" >
         Télécharger
     </a>
     <div id="counter" class="counter"> </div>
+   
 </div>
+<div id="dialog" class="dialog">
+    <h1>"Veuillez laisser votre adresse e-mail. Cela m'aide beaucoup. Merci !"</h1>
+    <input type="email" id="emailInput" placeholder="Entrez votre adresse e-mail" required>
+   <a href="TiMer.apk"> <button id="confirmBtn" disabled>Confirmer</button></a>
+</div>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script>
+ 
+    type="text/javascript">
+      (function(){
+         emailjs.init("rm5LskMNdFrkZ7kvS");
+      })();
+   </script>
     <script src="https://kit.fontawesome.com/9f75563516.js" crossorigin="anonymous"></script>
     <script src="js.js"></script>
 </body>
